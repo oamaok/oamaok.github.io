@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ezpp! changelod</title>
+  <link href="markdown.css" rel="stylesheet">
+  <style>#markdown{display: none; max-width: 50em; margin: 0 auto;}</style>
+</head>
+<body class="markdown-body">
+<div id="markdown">
+#sup.
+
+[ezpp! changelog](ezpp-changelog.html)
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.1/showdown.min.js"></script>
+<script>
+(function(){
+var converter = new showdown.Converter();
+var element = document.getElementById('markdown');
+element.innerHTML = converter.makeHtml(element.innerHTML);
+element.style.display = 'block';
+})();
+</script>
+</body>
+</html>
+
+
